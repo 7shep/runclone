@@ -28,7 +28,7 @@ public class PlayerController   : MonoBehaviour
         var vinput = Input.GetAxis("Vertical");
 
         if(characterController.isGrounded)
-        {
+        { //this is the script allowing the character to group when on ground
             moveVelocity = transform.forward * speed * vinput;
             turnVelocity = transform.up * roationspeed * hInput;
                 if(Input.GetButtonDown("Jump"))
