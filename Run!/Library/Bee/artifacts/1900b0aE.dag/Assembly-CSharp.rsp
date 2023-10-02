@@ -355,6 +355,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scenes/scripts/camerafollow.cs"
 "Assets/Scenes/scripts/playercontroller.cs"
+"Assets/Scripts/groundspawner.cs"
+"Assets/Scripts/groundtile.cs"
 -langversion:9.0
 
 /deterministic
