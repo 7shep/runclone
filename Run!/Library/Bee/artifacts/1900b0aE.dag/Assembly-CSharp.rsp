@@ -354,6 +354,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scenes/scripts/camerafollow.cs"
+"Assets/Scenes/scripts/characte rmovement V2.cs"
 "Assets/Scenes/scripts/gravity control.cs"
 "Assets/Scenes/scripts/playercontroller.cs"
 -langversion:9.0
