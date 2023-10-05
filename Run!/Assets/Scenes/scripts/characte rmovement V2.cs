@@ -6,13 +6,16 @@ using System.Threading;
 using UnityEngine;
 
 public class charactermovementV2 : MonoBehaviour
-{// setting the speed that our character moves
+
+{// setting the speed that our character moves 
+    bool alive = true;
     public float speed = 10;
-    public Rigidbody rb;
+    [serializeField] Rigidbody rb;
     float horizontalInput;
+    [Serializefield]
      private void FixedUpdate()
     {
-        // the speed multiplied by time creates an increase in speed overtime
+        // multiplt the speed by elapsed time allowing a speed increase as you survive longer
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
         // horizontal move effectd
         Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime;
@@ -24,4 +27,5 @@ public class charactermovementV2 : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
     }
+
 }

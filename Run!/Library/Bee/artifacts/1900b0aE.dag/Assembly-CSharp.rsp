@@ -356,6 +356,7 @@
 "Assets/Scenes/scripts/camerafollow.cs"
 "Assets/Scenes/scripts/characte rmovement V2.cs"
 "Assets/Scenes/scripts/gravity control.cs"
+"Assets/Scenes/scripts/jump.cs"
 "Assets/Scenes/scripts/playercontroller.cs"
 -langversion:9.0
 
