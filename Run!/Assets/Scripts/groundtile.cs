@@ -1,29 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class groundtile : MonoBehaviour
+public class GroundTile : MonoBehaviour
 {
 
-    groundspawner groundSpawner;
+    GroundSpawner groundSpawner;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        groundSpawner = GameObject.FindObjectOfType<groundspawner>();
-        
+    private void Start()
+    { 
+        groundSpawner = GameObject.FindObjectOfType<GroundSpawner>();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        groundSpawner.spawnTile();
+        groundSpawner.SpawnTile();
         Destroy(gameObject, 2);
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
+
+
+ 
