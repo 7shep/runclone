@@ -21,7 +21,7 @@ public class charactermovementV2 : MonoBehaviour
     // speed increases based on the amont of time survived
     public float speedIncreasePerPoint = 0.1f;
 
-    [SerializeField] float jumpForce = 400f;
+   
 
     private void FixedUpdate()
     {
@@ -36,12 +36,7 @@ public class charactermovementV2 : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Jump();
-
-        }
+        
 
         // if the character drops below -5 Y he dies and the game will restart
         if (transform.position.y < -5)
@@ -64,14 +59,5 @@ public class charactermovementV2 : MonoBehaviour
 
     }
 
-    void Jump()
-    {
-        //runs check to make sure character is on the ground
-        //collider checks if he is colliding on the y axis and decides if character is on ground based on that
-        float height = GetComponent<Collider>().bounds.size.y;
-         bool isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask);
-
-        // If we are, allow the character to jump
-        rb.AddForce(Vector3.up * jumpForce);
-    }
+    
 }
